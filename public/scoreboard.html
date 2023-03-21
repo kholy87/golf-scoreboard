@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Three Flex Columns with Iframes</title>
+    <style>
+      /* Set the height of the body and html to 100% */
+      html, body {
+        height: 100%;
+        overflow: hidden;
+        background-color: #fff;
+      }
+      
+      /* Create a flex container for the columns */
+      .container {
+        display: flex;
+        flex-direction: row;
+        height: calc(100% - 85px);
+      }
+      
+      /* Style for the header div */
+      .header {
+        height: 80px;
+        background-color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      /* Style for the columns */
+      .column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 85px);
+      }
+      
+      /* Style for the iframes */
+      .column iframe {
+        flex: 1;
+        width: 100%;
+        height: calc(100% - 85px);
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="https://uploads-ssl.webflow.com/614d8e785b5e5ef65050bce0/614da5ff383096d128320c76_428%20Athletics%20-%20logo%20-%20website%20-%202-p-800.png" height="80px" alt="Logo">
+    </div>
+    <div class="container">
+      <div class="column">
+        <iframe src="https://trackmanindoor.com/tournaments/Q2xvc2VzdFRvUGluVG91cm5hbWVudApkMWMwMTZkODEtYjQwYy00ZThlLTgxN2UtMjczNGY3MDFhNjZmOlB1Ymxpc2hlZA==/Leaderboard"></iframe>
+      </div>
+      <div class="column">
+        <iframe src="https://trackmanindoor.com/tournaments/TG9uZ2VzdERyaXZlVG91cm5hbWVudApkMTE1NDczNGQtNTdhMS00MWM3LWI2ZTEtNzExZmJkZGM1YTQyOlB1Ymxpc2hlZA==/Leaderboard"></iframe>
+      </div>
+      <div class="column">
+        <iframe src="https://trackmanindoor.com/tournaments/Q291cnNlVG91cm5hbWVudApkZjYxODE1MmUtOThiZS00OGI4LWE4ZjYtNDI2Y2RiY2U2ZjE0OlB1Ymxpc2hlZA==/Leaderboard"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
